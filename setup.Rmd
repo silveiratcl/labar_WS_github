@@ -24,7 +24,7 @@ Para poder utilizar o Git, Github e compartilhar projeto realizados com o Rstudi
 \
 3. Criar uma conta no [Github](https://github.com/)\
 \
-4. Instalar Github Desktop [Github Desktop](https://desktop.github.com/)
+4. Instalar Github Desktop [Github Desktop](https://desktop.github.com/) 
 <br><br>
 
 
