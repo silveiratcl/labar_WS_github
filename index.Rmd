@@ -1,0 +1,61 @@
+---
+pagetitle: "Home | Github WS"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+<style>
+body {
+text-align: justify}
+</style>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Visão Geral
+
+Esta página é o ponto de referência para o curso **Introdução ao controle de versão usando Git, Github e RStudio** a ser realizado no dia **26 de agosto de 2021**. Todo o material a ser utilizado será disponibilizado por aqui. 
+
+Quem nunca nomeou um arquivo como “final”? Depois de algumas releituras e correções você salva com outro nome, “final_2”. Depois desta versão, alguém analisa e faz observações, e você prontamente salva o arquivo como “final_2_fulano_version”, e assim por diante. Imagine este mesmo documento ficando parado por alguns meses e você quer retornar de onde parou. Esta tarefa pode se tornar desafiadora caso não tenhamos uma metodologia eficiente para o controle de versão. Nomear arquivos com diferentes nomes é uma maneira intuitiva de se fazer **controle de versão** de arquivos, até pode funcionar para problemas menos complexos. No entanto, quando trabalhamos em grupos de pesquisa, com várias pessoas editando textos e códigos, fica quase impossível gerenciar o histórico de versões de arquivos, ainda mais vários. Felizmente hoje existem ferramentas que nos auxiliam no **controle de versão**, tanto em nossas máquinas quanto em repositórios online. 
+
+## Setup
+
+Antes de começar o curso vá na guia [**Setup**](./setup.html) para preparar tudo que precisaremos em seu computador.  
+
+## Aula
+
+As atividades síncronas do curso serão realizadas no dia 26 de agosto, das 9h às 11:30.
+O acesse o link abaixo para e reunião no meet.
+
+[em breve link meet]()
+
+
+## Objetivos
+
+Os objetivos deste workshop são: Apresentar o software **Git**, o serviço **Github** e suas funcionalidades no controle de versão de arquivos usando o **RStudio**
+
+## Justificativa
+
+A dinâmica das colaborações em projetos pesquisa estão cada vez mais dinâmicas e com grande volume de dados. Além disso, é fato que atualmente as colaborações científicas apresentam conexões entre profissionais em escala global. Ciente disso, ferramentas que auxiliem a colaboração científica com eficiência, pelo **controle de versão**, são imprescindíveis no cenário digital em que a ciência está inserida. Desta maneira, este vem a suprir uma lacuna de ferramenta de produtividade que não são exploradas no conteúdo dos cursos de graduação e pós-graduação em ciências ambientais.  
+
+## Resultados esperados
+
+Espera-se que os participantes desenvolvam durante o workshop a capacidade de compreender os princípios do controle de versão e executar os principais comandos.  Considerando o atual contexto de trabalho em colaboração, em escala global, espera-se que os participantes identifiquem e adotem os métodos tratados e otimizem o dia a dia como estudantes e pesquisadores.   
+
+## Programa
+
+1.  **Introdução ao Controle de Versão**\
+    
+2.  **Git**\
+
+3.  **Github**\
+  
+4.  **Configurando o Git e RStudio**\
+   
+5.  **Criando Repos**\
+    
+6.  **Workflow RStudio/Github**\
+    
+

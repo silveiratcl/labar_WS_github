@@ -1,0 +1,28 @@
+name: "Github Workshop"
+navbar:
+  title: "Github Workshop"
+  left:
+    - text: "Home"
+      href: index.html
+      icon: fas fa-home fa-lg
+    - text: "Github Intro"
+      href: blank.html
+      icon: fa-github fa-lg
+    - text: "setup"
+      href: setup.html
+      icon: fas fa-cogs fa-lg
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:<silveira.tcl@gmail.com>
+    - icon: fa-github fa-lg
+      href: https://github.com/silveiratcl
+output_dir: "docs"
+output:
+  html_document:
+    theme: "default"
+    type: "inverse"
+    toc: true
+    toc_float: true
+    code_folding: "show"
+    highlight: "default"
+    css: libs/swcarpentry-lesson.css

@@ -1,0 +1,31 @@
+---
+pagetitle: "Setup | Github WS"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+<style>
+body {
+text-align: justify}
+</style>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##  Instalando Git-Github-RStudio 
+
+Para poder utilizar o Git, Github e compartilhar projeto realizados com o Rstudio, você precisa antes fazer o seguinte:  
+
+1. Instalar em seu o computador o [Git](https://git-scm.com/)\
+\
+2. Instalar o [R](https://cran.r-project.org/) e RStudio [RStudio](https://www.rstudio.com/)\
+\
+3. Criar uma conta no [Github](https://github.com/)\
+\
+<br><br>
+
+
+
+  
