@@ -29,11 +29,9 @@ Antes de começar o curso vá na guia [**Setup**](./setup.html) para preparar tu
 As atividades síncronas do curso serão realizadas no dia 26 de agosto, das 9h às 11:30.
 O acesse o link abaixo para e reunião no meet.
 
-[link meet](meet.google.com/jsf-sndu-usb)
-\
-[Video]()
-\
-[Slides]()
+[link meet](https://meet.google.com/jsf-sndu-usb)\
+[Video]()\
+[Slides]()\
 
 
 ## Objetivos

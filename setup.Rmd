@@ -18,9 +18,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Para poder utilizar o Git, Github e compartilhar projeto realizados com o Rstudio, você precisa antes fazer o seguinte:  
 
-1. Instalar em seu o computador o [Git](https://git-scm.com/)\
-* Para usuários de Mac, olhe esta referência  [https://phoenixnap.com/kb/install-git-on-mac](https://phoenixnap.com/kb/install-git-on-mac)
-\
+1. Instalar em seu o computador o [Git](https://git-scm.com/). Para usuários de Mac, olhem estas referências:
+<br>
+ 
++ [https://phoenixnap.com/kb/install-git-on-mac](https://phoenixnap.com/kb/install-git-on-mac)
+<br>
+ 
++ [https://www.youtube.com/watch?v=B8Rsvb9TW_E](https://www.youtube.com/watch?v=B8Rsvb9TW_E)
+
 2. Instalar o [R](https://cran.r-project.org/) e RStudio [RStudio](https://www.rstudio.com/)\
 \
 3. Criar uma conta no [Github](https://github.com/)\
