@@ -317,7 +317,7 @@ Agora que já vimos como fazer as principais ações usando o **Git** e **Github
 <br><br>
   
 
-Para colaborar em um repositório você antes de mais nada copiar os arquivos para o seu **Github**. Essa ação é executada com o comando `fork` `r icon_fork`. Por exemplo, se dirija ao [respositório de teste](https://github.com/ufsclabar/repo_test) e localize no alto da página o botão `fork` `r icon_fork`. Depois escolha onde você gostaria de colocar, escolha seu usuário. No canto esquerdo da página mostrará que o repo está em seu usuário também. 
+Para colaborar em um repositório você antes de mais nada copiar os arquivos para o seu **Github**. Essa ação é executada com o comando `fork` `r icon_fork`. Por exemplo, se dirija ao [respositório de teste](https://github.com/ufsclabar/repo_test target="_blank") e localize no alto da página o botão `fork` `r icon_fork`. Depois escolha onde você gostaria de colocar, escolha seu usuário. No canto esquerdo da página mostrará que o repo está em seu usuário também. 
 
 <img src= "figs/git_22.png" style= "width:60%">
 <br><br>
