@@ -6,7 +6,7 @@ navbar:
       href: index.html
       icon: fas fa-home fa-lg
     - text: "Github Intro"
-      href: blank.html
+      href: github.html
       icon: fa-github fa-lg
     - text: "setup"
       href: setup.html
