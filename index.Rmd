@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Visão Geral
 
-Esta página é o ponto de referência para o curso **Introdução ao controle de versão usando Git, Github e RStudio** a ser realizado no dia **26 de agosto de 2021**. Todo o material a ser utilizado será disponibilizado por aqui. 
+Esta página é o ponto de referência para o curso **Introdução ao controle de versão usando Git, Github e RStudio** a ser realizado no dia **26 de agosto e 2 de setembro de 2021**. Todo o material a ser utilizado será disponibilizado nesta página.
 
 Quem nunca nomeou um arquivo como “final”? Depois de algumas releituras e correções você salva com outro nome, “final_2”. Depois desta versão, alguém analisa e faz observações, e você prontamente salva o arquivo como “final_2_fulano_version”, e assim por diante. Imagine este mesmo documento ficando parado por alguns meses e você quer retornar de onde parou. Esta tarefa pode se tornar desafiadora caso não tenhamos uma metodologia eficiente para o controle de versão. Nomear arquivos com diferentes nomes é uma maneira intuitiva de se fazer **controle de versão** de arquivos, até pode funcionar para problemas menos complexos. No entanto, quando trabalhamos em grupos de pesquisa, com várias pessoas editando textos e códigos, fica quase impossível gerenciar o histórico de versões de arquivos, ainda mais vários. Felizmente hoje existem ferramentas que nos auxiliam no **controle de versão**, tanto em nossas máquinas quanto em repositórios online. 
 
@@ -26,12 +26,13 @@ Antes de começar o curso vá na guia [**Setup**](./setup.html) para preparar tu
 
 ## Aula
 
-As atividades síncronas do curso serão realizadas no dia 26 de agosto, das 9h às 11:30.
+As atividades síncronas do curso serão realizadas no dia 26 de agosto, das 9:30 às 12:00.
 O acesse o link abaixo para e reunião no meet.
 
 [link meet](https://meet.google.com/jsf-sndu-usb)\
-[Video]()\
-[Slides]()\
+[Video dia 26 de agosto](https://drive.google.com/file/d/1FFl-h7Hmy76SgXBJnZX09L0atmWPiyes/view?ts=6127bb9a)\
+[Em breve - Video dia 2 de setembro]()\
+[Slides](https://drive.google.com/file/d/1qh2pz9acYHFdg_-RPZRCF8vzUvmfv9zq/view?usp=sharing)\
 
 
 ## Objetivos
@@ -59,5 +60,14 @@ Espera-se que os participantes desenvolvam durante o workshop a capacidade de co
 5.  **Criando Repos**\
     
 6.  **Workflow RStudio/Github**\
-    
+
+## Bibliografia
+
++ [Guides Github](https://guides.github.com/)
++ [Version Control with Git](http://swcarpentry.github.io/git-novice/)
++ [Happy Git and Github for the useR](https://happygitwithr.com/)
++ [Version Control with Git and SVN - RStudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
++ [Git cheatsheet](http://git-cheatsheet.com/)
+
+
 
