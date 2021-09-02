@@ -679,11 +679,11 @@ $ git push</code></pre>
 <h3>5.2 Voltando para um determinado commit (ou versão) do repositório <strong>local</strong></h3>
 <p>Para voltar a uma determinada versão você deve identificar qual <code>commit</code> <svg viewBox="0 0 16 16" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></svg>. Anote o <strong>id</strong> e rode o seguinte comando no <strong>terminal</strong>:</p>
 <pre class="r"><code>$ git checkout &lt;id do commit&gt; .</code></pre>
-<p><br><br></p>
+<p><br></p>
 <blockquote>
 <p><strong>Importante</strong> Não esqueça de colocar o ponto “.” no final comando. Você não será advertido de nada e vai parecer que funcionou. Sem o “.” no final do comando &gt;você vai sair do ramo e vai poder ficar fazendo commits, e estes commits não serão salvos. Portanto, não esqueça o ponto final “.”!</p>
 </blockquote>
-<p><br><br></p>
+<p><br></p>
 <p>Após este comando você irá para a versão escolhida <strong>local</strong>.</p>
 </div>
 <div id="adicionando-a-versão-atual-para-fazer-o-commit-e-o-push-para-o-repositório-remoto" class="section level3">
@@ -692,7 +692,6 @@ $ git push</code></pre>
 <pre class="r"><code>$ git add .
 $ git commit -m &quot;Voltando para o commit id xxxxxx&quot;
 $ git push</code></pre>
-<p><a href="https://medium.com/swlh/using-git-how-to-go-back-to-a-previous-commit-8579ccc8180f" class="uri">https://medium.com/swlh/using-git-how-to-go-back-to-a-previous-commit-8579ccc8180f</a></p>
 </div>
 </div>
 <div id="referências-e-links-úteis" class="section level2">

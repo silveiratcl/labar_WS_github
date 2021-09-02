@@ -426,14 +426,13 @@ $ git checkout <id do commit> .
 
 
 ```
-<br><br>
-  
+<br>
+ 
 > **Importante**
 > Não esqueça de colocar o ponto "." no final comando. Você não será advertido de nada e vai parecer que funcionou. Sem o "." no final do comando >você vai sair do ramo e vai poder ficar fazendo commits, e estes commits não serão salvos. Portanto, não esqueça o ponto final "."!
 
-<br><br>
-  
-
+<br>
+ 
 Após este comando você irá para a versão escolhida **local**.
 
 
@@ -448,12 +447,6 @@ $ git commit -m "Voltando para o commit id xxxxxx"
 $ git push
 
 ```
-
-
-
-
-https://medium.com/swlh/using-git-how-to-go-back-to-a-previous-commit-8579ccc8180f
-
 
 
 ## 5. Referências e links úteis
