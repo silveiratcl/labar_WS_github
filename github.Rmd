@@ -111,25 +111,25 @@ Substitua `USER` e `USER@SEUEMAIL.COM` com o seu. No meu caso seria `silveira.tc
 ```{r, eval=FALSE}
 
 # mostrando a versão do git em seu computador
-git --version
+$ git --version
 
 # mostrando o caminho das pastas em seu Mac/Linux
-which git
+$ which git
 
 # mostrando o caminho das pastas no Windows
-where git
+$ where git
 
 # troque USER com o seu nome de usuário do Github
-git config –-global user.name USER
+$ git config –-global user.name USER
 
 # troque USER@SEUEMAIL com o seu email resgistrado no Github
-git config –-global user.email USER@SEUEMAIL.COM
+$ git config –-global user.email USER@SEUEMAIL.COM
 
 # use git "merge" (default) para resolver possíveis conflitos git "pull" conflicts
-git config --global pull.rebase true
+$ git config --global pull.rebase true
 
 # listando "config" para confirmar as variáveis de user.* 
-git config --list
+$ git config --list
 
 ```
 <br><br>
@@ -286,10 +286,10 @@ Para fazer o merge do ramo **Caminho_2**, primeiro você precisa voltar para o r
 
 ```{r, eval = FALSE}
 # Fazendo o "merge" de "Caminho_2" ao "master"
-git merge Caminho_2
+$ git merge Caminho_2
 
 # Fazendo o "push" para o repositório
-git push
+$ git push
 
 ```
 
@@ -383,10 +383,78 @@ Depois de analisar as mundanças você pode fazer `merge` `r icon_merge` , ou se
 <img src= "figs/git_32.png" style= "width:60%">
 <br><br>  
 
-
 Esse foi um exercício simples de colaboração usando Git e Github. Para mais informações sobre o workflow usando o Github, acesse [Github Guides](https://guides.github.com/introduction/flow/). Um guia muito útil também é o [Happy Git and Github for the useR](https://happygitwithr.com/). 
 
+
 ***
+
+## 5. Back to the future: voltando para uma versão do passado
+
+### 5.1 Visualizando todas as versões do repositório
+
+Com o andamento do trabalho em um diretório, o usuário pode vir a querer retornar a uma versão antiga. Como o diretório está em controle de versão via **Git**, as versões antigas podem ser recuperadas facilmente. A visualização de versões anteriores pode ser realizadas de duas maneiras:
+<br>
+ 
+
+**1)** Você pode visualizar a lista de versões de seu diretório usando o comando `git log --oneline`. Em amarelo são apresentados os códigos dos `commit` `r icon_commit`, em branco as mensagens escritas em cada um deles. A primeira linha representa o `commit` `r icon_commit` mais recente. Se quiser visualizar mais detalhes dos `commits` `r icon_commit` digite somente `git log` 
+
+<img src= "figs/git_33.png" style= "width:60%">
+<br><br>  
+
+
+**2)** Você pode também ir para o seu repositório no **Github** e clicar em **commits**.
+
+
+<img src= "figs/git_34.png" style= "width:60%">
+<br><br>  
+
+
+Após clicar em commit, em seguida abrirá uma página onde você pode visualizar a lista de versões do repositório.
+
+
+<img src= "figs/git_35.png" style= "width:60%">
+<br><br>  
+
+
+### 5.2 Voltando para um determinado commit (ou versão) do repositório **local**
+
+Para voltar a uma determinada versão você deve identificar qual `commit` `r icon_commit`. Anote o **id** e rode o seguinte comando no **terminal**:
+
+```{r eval=FALSE }
+
+$ git checkout <id do commit> .
+
+
+```
+<br><br>
+  
+> **Importante**
+> Não esqueça de colocar o ponto "." no final comando. Você não será advertido de nada e vai parecer que funcionou. Sem o "." no final do comando >você vai sair do ramo e vai poder ficar fazendo commits, e estes commits não serão salvos. Portanto, não esqueça o ponto final "."!
+
+<br><br>
+  
+
+Após este comando você irá para a versão escolhida **local**.
+
+
+### 5.3 Adicionando a versão atual para fazer o "commit" e o "push" para o repositório **remoto**
+
+Da mesma maneira que você faz os `commits` `r icon_commit` normais, você tem que também adicionar todos os arquivos desta versão e fazer o `push` `r icon_push`. Abaixo fazendo o commit com linha de comando no **terminal**. 
+
+```{r eval=FALSE }
+
+$ git add .
+$ git commit -m "Voltando para o commit id xxxxxx"
+$ git push
+
+```
+
+
+
+
+https://medium.com/swlh/using-git-how-to-go-back-to-a-previous-commit-8579ccc8180f
+
+
 
 ## 5. Referências e links úteis
 
@@ -394,7 +462,7 @@ Esse foi um exercício simples de colaboração usando Git e Github. Para mais i
 + [Version Control with Git](http://swcarpentry.github.io/git-novice/)
 + [Happy Git and Github for the useR](https://happygitwithr.com/)
 + [Version Control with Git and SVN - RStudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
-
++ [Revert Git repo to previous version](https://medium.com/swlh/using-git-how-to-go-back-to-a-previous-commit-8579ccc8180f)
 
 
 

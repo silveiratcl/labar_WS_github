@@ -463,25 +463,25 @@ text-align: justify}
 <p>Abra o RStudio e agora vamos configurar o Git para identifdicar você. No RStudio ache a aba Terminal e insira os seguintes comados, um de cada vez. <br><br></p>
 <p>Substitua <code>USER</code> e <code>USER@SEUEMAIL.COM</code> com o seu. No meu caso seria <code>silveira.tcl</code> e <code>silveira.tcl@gmail.com</code>;</p>
 <pre class="r"><code># mostrando a versão do git em seu computador
-git --version
+$ git --version
 
 # mostrando o caminho das pastas em seu Mac/Linux
-which git
+$ which git
 
 # mostrando o caminho das pastas no Windows
-where git
+$ where git
 
 # troque USER com o seu nome de usuário do Github
-git config –-global user.name USER
+$ git config –-global user.name USER
 
 # troque USER@SEUEMAIL com o seu email resgistrado no Github
-git config –-global user.email USER@SEUEMAIL.COM
+$ git config –-global user.email USER@SEUEMAIL.COM
 
 # use git &quot;merge&quot; (default) para resolver possíveis conflitos git &quot;pull&quot; conflicts
-git config --global pull.rebase true
+$ git config --global pull.rebase true
 
 # listando &quot;config&quot; para confirmar as variáveis de user.* 
-git config --list</code></pre>
+$ git config --list</code></pre>
 <p><br><br></p>
 <p>Agora acesse <strong>Tools-&gt;Global Options</strong> e selecione <strong>Git/SVN</strong> no menu lateral. No campo <em>Git executable</em> insira o caminho das pastas baseados nos comandos anteriores (Note que eles são diferentes para Mac/Linux <code>which git</code> e Windows <code>where git</code>).</p>
 <p>Essa configuração parece ser desafiadora em um primeiro momento, mas felizmente este procedimento é bem documentado em <a href="https://happygitwithr.com/rstudio-see-git.html#tell-rstudio-where-to-find-git">Happy Git and GitHub for the useR</a> se tiver algum problema.<br><br></p>
@@ -595,10 +595,10 @@ git config --list</code></pre>
 <p><img src= "figs/git_19.png" style= "width:70%"> <br><br></p>
 <p>Para fazer o merge do ramo <strong>Caminho_2</strong>, primeiro você precisa voltar para o ramo <strong>master</strong>. Na aba git do RStudio troque de <strong>Caminho_2</strong> para <strong>master</strong>. Depois disso digite os seguintes comandos no <strong>Terminal</strong>, um de cada vez.</p>
 <pre class="r"><code># Fazendo o &quot;merge&quot; de &quot;Caminho_2&quot; ao &quot;master&quot;
-git merge Caminho_2
+$ git merge Caminho_2
 
 # Fazendo o &quot;push&quot; para o repositório
-git push</code></pre>
+$ git push</code></pre>
 <p>Você verá na aba <strong>Terminal</strong> algo semelhante a figura abaixo.</p>
 <p><img src= "figs/git_20.png" style= "width:100%"> <br><br></p>
 <p>Voltando para o repositório no <strong>Github</strong> podemos visualizar a versão atualizada, mais <strong>upstream</strong> do repositório no ramo <code>master</code>.</p>
@@ -663,6 +663,38 @@ git push</code></pre>
 <hr />
 </div>
 </div>
+<div id="back-to-the-future-voltando-para-uma-versão-do-passado" class="section level2">
+<h2>5. Back to the future: voltando para uma versão do passado</h2>
+<div id="visualizando-todas-as-versões-do-repositório" class="section level3">
+<h3>5.1 Visualizando todas as versões do repositório</h3>
+<p>Com o andamento do trabalho em um diretório, o usuário pode vir a querer retornar a uma versão antiga. Como o diretório está em controle de versão via <strong>Git</strong>, as versões antigas podem ser recuperadas facilmente. A visualização de versões anteriores pode ser realizadas de duas maneiras: <br></p>
+<p><strong>1)</strong> Você pode visualizar a lista de versões de seu diretório usando o comando <code>git log --oneline</code>. Em amarelo são apresentados os códigos dos <code>commit</code> <svg viewBox="0 0 16 16" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></svg>, em branco as mensagens escritas em cada um deles. A primeira linha representa o <code>commit</code> <svg viewBox="0 0 16 16" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></svg> mais recente. Se quiser visualizar mais detalhes dos <code>commits</code> <svg viewBox="0 0 16 16" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></svg> digite somente <code>git log</code></p>
+<p><img src= "figs/git_33.png" style= "width:60%"> <br><br></p>
+<p><strong>2)</strong> Você pode também ir para o seu repositório no <strong>Github</strong> e clicar em <strong>commits</strong>.</p>
+<p><img src= "figs/git_34.png" style= "width:60%"> <br><br></p>
+<p>Após clicar em commit, em seguida abrirá uma página onde você pode visualizar a lista de versões do repositório.</p>
+<p><img src= "figs/git_35.png" style= "width:60%"> <br><br></p>
+</div>
+<div id="voltando-para-um-determinado-commit-ou-versão-do-repositório-local" class="section level3">
+<h3>5.2 Voltando para um determinado commit (ou versão) do repositório <strong>local</strong></h3>
+<p>Para voltar a uma determinada versão você deve identificar qual <code>commit</code> <svg viewBox="0 0 16 16" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></svg>. Anote o <strong>id</strong> e rode o seguinte comando no <strong>terminal</strong>:</p>
+<pre class="r"><code>$ git checkout &lt;id do commit&gt; .</code></pre>
+<p><br><br></p>
+<blockquote>
+<p><strong>Importante</strong> Não esqueça de colocar o ponto “.” no final comando. Você não será advertido de nada e vai parecer que funcionou. Sem o “.” no final do comando &gt;você vai sair do ramo e vai poder ficar fazendo commits, e estes commits não serão salvos. Portanto, não esqueça o ponto final “.”!</p>
+</blockquote>
+<p><br><br></p>
+<p>Após este comando você irá para a versão escolhida <strong>local</strong>.</p>
+</div>
+<div id="adicionando-a-versão-atual-para-fazer-o-commit-e-o-push-para-o-repositório-remoto" class="section level3">
+<h3>5.3 Adicionando a versão atual para fazer o “commit” e o “push” para o repositório <strong>remoto</strong></h3>
+<p>Da mesma maneira que você faz os <code>commits</code> <svg viewBox="0 0 16 16" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></svg> normais, você tem que também adicionar todos os arquivos desta versão e fazer o <code>push</code> <svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zM393.4 288H328v112c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V288h-65.4c-14.3 0-21.4-17.2-11.3-27.3l105.4-105.4c6.2-6.2 16.4-6.2 22.6 0l105.4 105.4c10.1 10.1 2.9 27.3-11.3 27.3z"></path></svg>. Abaixo fazendo o commit com linha de comando no <strong>terminal</strong>.</p>
+<pre class="r"><code>$ git add .
+$ git commit -m &quot;Voltando para o commit id xxxxxx&quot;
+$ git push</code></pre>
+<p><a href="https://medium.com/swlh/using-git-how-to-go-back-to-a-previous-commit-8579ccc8180f" class="uri">https://medium.com/swlh/using-git-how-to-go-back-to-a-previous-commit-8579ccc8180f</a></p>
+</div>
+</div>
 <div id="referências-e-links-úteis" class="section level2">
 <h2>5. Referências e links úteis</h2>
 <ul>
@@ -670,6 +702,7 @@ git push</code></pre>
 <li><a href="http://swcarpentry.github.io/git-novice/">Version Control with Git</a></li>
 <li><a href="https://happygitwithr.com/">Happy Git and Github for the useR</a></li>
 <li><a href="https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN">Version Control with Git and SVN - RStudio</a></li>
+<li><a href="https://medium.com/swlh/using-git-how-to-go-back-to-a-previous-commit-8579ccc8180f">Revert Git repo to previous version</a></li>
 </ul>
 </div>
 
