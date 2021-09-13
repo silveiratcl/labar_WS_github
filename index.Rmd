@@ -30,7 +30,7 @@ As atividades síncronas do curso serão realizadas no dia 26 de agosto, das 9:3
 
 [Video dia 26 de agosto](https://youtu.be/xTyhnZuo5WM)\
 [Video dia 2 de setembro](https://youtu.be/VQ9dWR6pzOk)\
-[Em breve - Video dia 9 de setembro](https://youtu.be/VQ9dWR6pzOk)\
+[Video dia 9 de setembro](https://youtu.be/3mJpKvOyoyw )\
 [Slides](https://drive.google.com/file/d/1qh2pz9acYHFdg_-RPZRCF8vzUvmfv9zq/view?usp=sharing)\
 
 
@@ -44,7 +44,7 @@ A dinâmica das colaborações em projetos pesquisa estão cada vez mais dinâmi
 
 ## Resultados esperados
 
-Espera-se que os participantes desenvolvam durante o workshop a capacidade de compreender os princípios do controle de versão e executar os principais comandos.  Considerando o atual contexto de trabalho em colaboração, em escala global, espera-se que os participantes identifiquem e adotem os métodos tratados, otimizando o dia a dia como estudantes e pesquisadores.   
+Espera-se que os participantes desenvolvam durante o workshop a capacidade de compreender os princípios do controle de versão e executar os principais comandos.  Considerando o atual contexto de trabalho em colaboração, em escala global, espera-se que os participantes identifiquem e adotem os métodos discutidos, otimizando o dia a dia como estudantes e pesquisadores.   
 
 ## Programa
 
